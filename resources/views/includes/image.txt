@@ -1,0 +1,188 @@
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Add top margin for scrolling */
+  margin-top: 50px; /* Adjust as needed */
+}
+
+
+.voltage-button {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-frame {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background-color: #0D1127;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #5978F3;
+}
+
+
+.select-image-btn {
+    position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+#previewImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 300px;  /* Adjusted to better fit the circular image */
+  text-align: center;
+}
+#preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img-container {
+    width: 100%;
+    max-height: 500px;
+    overflow: auto;
+}
+.icon-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-label {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.voltage-button svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.voltage-button svg path {
+  stroke-dasharray: 100;
+  filter: url("#glow");
+}
+
+.voltage-button svg path.line-1 {
+  stroke: #f6de8d;
+  stroke-dashoffset: 0;
+  animation: spark-1 3s linear infinite;
+}
+
+.voltage-button svg path.line-2 {
+  stroke: #6bfeff;
+  stroke-dashoffset: 500;
+  animation: spark-2 3s linear infinite;
+}
+
+.dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background: white;
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.dot-1 { top: 0; left: 20%; animation: fly-up 3s linear infinite; }
+.dot-2 { top: 0; left: 55%; animation: fly-up 3s linear infinite; animation-delay: 0.5s; }
+.dot-3 { top: 0; left: 80%; animation: fly-up 3s linear infinite; animation-delay: 1s; }
+.dot-4 { bottom: 0; left: 30%; animation: fly-down 3s linear infinite; animation-delay: 2.5s; }
+.dot-5 { bottom: 0; left: 65%; animation: fly-down 3s linear infinite; animation-delay: 1.5s; }
+
+@keyframes spark-1 {
+  to { stroke-dashoffset: -1000; }
+}
+
+@keyframes spark-2 {
+  to { stroke-dashoffset: -500; }
+}
+
+@keyframes fly-up {
+  0% { opacity: 0; transform: translateY(0) scale(0.2); }
+  5% { opacity: 1; transform: translateY(-100px) scale(0.4); }
+  10%, 100% { opacity: 0; transform: translateY(-200px) scale(0.2); }
+}
+
+@keyframes fly-down {
+  0% { opacity: 0; transform: translateY(0) scale(0.2); }
+  5% { opacity: 1; transform: translateY(100px) scale(0.4); }
+  10%, 100% { opacity: 0; transform: translateY(200px) scale(0.2); }
+}
