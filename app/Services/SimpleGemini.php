@@ -1,5 +1,4 @@
 <?php
-// app/Services/SimpleGemini.php
 namespace App\Services;
 
 use Illuminate\Support\Facades\Http;
@@ -7,7 +6,7 @@ use Illuminate\Support\Facades\Http;
 class SimpleGemini
 {
     private $apiKey;
-    private $baseUrl = 'https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent';
+    private $baseUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
 
     public function __construct()
     {
@@ -43,7 +42,6 @@ class SimpleGemini
                 'success' => false,
                 'error' => $response->json()['error']['message'] ?? 'API Error'
             ];
-
         } catch (\Exception $e) {
             return [
                 'success' => false,

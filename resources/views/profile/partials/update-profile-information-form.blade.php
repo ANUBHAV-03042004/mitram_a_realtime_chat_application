@@ -1,8 +1,9 @@
 
 <section>
     <header>
-        <h2>
+        <h2> <b>
             {{ __('Profile Information') }}
+</b>
         </h2>
         <p>
             {{ __("Update your account's profile information and email address.") }}
@@ -64,6 +65,9 @@
 </section>
 
 <style>
+    header h2{
+        font-size:20px;
+    }
     .input-container {
         display: flex;
         flex-direction: column;

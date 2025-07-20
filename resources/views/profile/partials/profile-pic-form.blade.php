@@ -39,9 +39,8 @@
     </div>
     </div>
         </div> -->
-
+            <h4><b>SELECT YOUR GENDER :<br></b></h4>
         <div class="radio-input">
-            <h4><b>SELECT YOUR GENDER</b></h4>
             <input value="Male" name="gender" id="value-1" type="radio" {{ old('gender', $user->gender) === 'Male' ? 'checked' : '' }}>
             <label for="value-1">Male</label>
             <input value="Female" name="gender" id="value-2" type="radio" {{ old('gender', $user->gender) === 'Female' ? 'checked' : '' }}>
@@ -51,9 +50,8 @@
             <input value="Other" name="gender" id="value-4" type="radio" {{ old('gender', $user->gender) === 'Other' ? 'checked' : '' }}>
             <label for="value-4">Other</label>
         </div>
-
+  <h4><b>SELECT DATE OF BIRTH</b></h4>
         <div class="date-input">
-            <h4><b>SELECT DATE OF BIRTH</b></h4>
             <input class="ui-date" name="date_of_birth" type="date" value="{{ old('date_of_birth', $user->date_of_birth) }}">
         </div>
 

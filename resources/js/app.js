@@ -13,7 +13,7 @@ Alpine.start();
 const { default: axios } = require('axios');
 const { default: Echo } = require('laravel-echo');
 
-require('./bootstrap');
+// require('./bootstrap');
 
 window.Vue = require('vue').default;
 

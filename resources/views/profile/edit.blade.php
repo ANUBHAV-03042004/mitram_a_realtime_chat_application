@@ -4,14 +4,6 @@
 <title>Profile-Mitram</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-  <!-- Favicons -->
-  <!-- Favicons -->
-<link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
-<link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
-
-
- 
-
 <body>
     <div class="py-12">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">

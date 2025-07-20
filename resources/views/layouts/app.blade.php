@@ -299,7 +299,7 @@
 
             // Message handlers
             $(document).on('keyup', '#id,#message', function (e) {
-                $("input").css("background-color", "yellow");
+                $("input").css("background-color", "whitew");
                 var message = $("input[name=message]").val();
                 var id = $("input[name=id]").val();
 
