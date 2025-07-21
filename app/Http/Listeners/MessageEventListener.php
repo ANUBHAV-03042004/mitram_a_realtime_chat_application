@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Listeners;
+namespace App\Http\Listeners;
 
 use App\Events\MessageEvent;
 use Illuminate\Contracts\Queue\ShouldQueue;
