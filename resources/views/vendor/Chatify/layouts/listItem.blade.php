@@ -8,7 +8,8 @@
                 <!-- <span class="far fa-bookmark"></span> -->
               <!-- <img src="{{ asset('storage/' . Auth::user()->avatar) }}" alt="User Avatar" class="avatar-img" /> -->
                <!-- <img src="{{ asset('storage/' . Auth::user()->avatar) }}" alt="User Avatar" style="width:40px; height:40px; border-radius:50%;" /> -->
-                <pre>{{ Auth::user()->avatar }}</pre>
+           <img src="{{ asset('storage/users-avatar/' . Auth::user()->avatar) }}" alt="User Avatar" style="width:40px; height:40px; border-radius:50%;" />
+
             </div>
             </td>
             {{-- center side --}}
