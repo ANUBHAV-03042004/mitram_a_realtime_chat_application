@@ -6,7 +6,7 @@
             <td>
             <div class="saved-messages avatar av-m">
                 <!-- <span class="far fa-bookmark"></span> -->
-                 <span>{{ Auth::user()->avatar}}</span>
+              <img src="{{ asset('storage/' . Auth::user()->avatar) }}" alt="User Avatar" class="avatar-img" />
             </div>
             </td>
             {{-- center side --}}
