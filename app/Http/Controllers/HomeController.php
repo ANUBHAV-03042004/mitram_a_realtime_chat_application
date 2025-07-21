@@ -26,10 +26,15 @@ class HomeController extends Controller
     {
         $my_id = Auth::id();
         // select channels that User Subscribe
-        $users = DB::select("select groups.id, groups.name 
-        from groups inner JOIN  group_participants ON groups.id = group_participants.group_id and group_participants.user_id = " . Auth::id() . "
-        where group_participants.user_id = " . Auth::id() . "
-        group by groups.id, groups.name");
+       $users = DB::select("
+    SELECT `groups`.id, `groups`.name 
+    FROM `groups`
+    INNER JOIN group_participants 
+        ON `groups`.id = group_participants.group_id 
+        AND group_participants.user_id = ?
+    WHERE group_participants.user_id = ?
+    GROUP BY `groups`.id, `groups`.name
+", [Auth::id(), Auth::id()]);
         return view('home', compact('users'));
     }
     //  get all Channels are in App   
