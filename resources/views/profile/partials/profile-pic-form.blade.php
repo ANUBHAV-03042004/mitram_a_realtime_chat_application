@@ -72,7 +72,7 @@
 
   </div>
 </div> -->
-@include('includes\update-profile-part')
+@include('includes.update-profile-part')
 <script>
 // document.addEventListener('DOMContentLoaded', function() {
 //   const preview = document.getElementById('preview');

@@ -31,7 +31,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
     </head>
     <body>
-@include('includes/header')
+@include('includes.header')
   <main class="main">
 
     <!-- Page Title -->
@@ -112,7 +112,7 @@
     </section><!-- /Starter Section Section -->
 
   </main>
-  @include('includes/footer')
+  @include('includes.footer')
 
 </body>
 </div>

@@ -39,7 +39,7 @@
 </head>
 
 <body class="services-page">
-@include('includes/header')
+@include('includes.header')
  
 
   <main class="main">
@@ -148,7 +148,7 @@
       </div>
   </main>
 
-  @include('includes/footer')
+  @include('includes.footer')
   
 
 </body>

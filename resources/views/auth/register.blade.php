@@ -66,7 +66,7 @@
                 <p class="signin">Already have an account? <a href="{{ route('login') }}">Sign in</a></p>
             </form>
         </div>
-  @include('includes/style')
+  @include('includes.style')
 
   </main>
 </body>
