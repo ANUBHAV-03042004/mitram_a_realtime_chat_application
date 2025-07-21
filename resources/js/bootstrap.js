@@ -1,11 +1,13 @@
 import _ from 'lodash';
 window._ = _;
 
-import 'bootstrap';
 import $ from 'jquery';
-import Popper from 'popper.js';
+import Popper from 'popper.js/dist/umd/popper';
+import 'bootstrap';
+
 window.$ = $;
 window.jQuery = $;
+window.Popper = Popper;
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
