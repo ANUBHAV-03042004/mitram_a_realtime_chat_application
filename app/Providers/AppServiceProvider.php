@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use View;
-use App\Models\Message;  
+use App\Models\message;  
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Schema;
 class AppServiceProvider extends ServiceProvider

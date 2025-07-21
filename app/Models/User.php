@@ -166,7 +166,7 @@ public function group_member()
 
 public function message()
 {
-    return $this->hasMany('App\Models\Message', 'user_id');
+    return $this->hasMany('App\Models\message', 'user_id');
 }
 
 public function groups()

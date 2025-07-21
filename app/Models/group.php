@@ -23,7 +23,7 @@ class group extends Model
 
     public function messages()
     {
-        return $this->hasMany('App\Models\Message', 'group_id');
+        return $this->hasMany('App\Models\message', 'group_id');
     }
 
     public function users()

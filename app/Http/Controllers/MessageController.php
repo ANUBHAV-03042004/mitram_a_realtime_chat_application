@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Message;
+use App\Models\message;
 use App\Models\Group;
 
 use App\Events\MessageEvent;  
