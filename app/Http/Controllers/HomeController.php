@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\chat;
-use App\Models\Message;  
+use App\Models\message;  
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
