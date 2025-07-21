@@ -5,7 +5,8 @@
             {{-- Avatar side --}}
             <td>
             <div class="saved-messages avatar av-m">
-                <span class="far fa-bookmark"></span>
+                <!-- <span class="far fa-bookmark"></span> -->
+                 <span>{{ Auth::user()->avatar}}</span>
             </div>
             </td>
             {{-- center side --}}
