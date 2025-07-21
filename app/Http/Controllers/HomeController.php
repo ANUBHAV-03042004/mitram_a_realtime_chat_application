@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Pusher\Pusher;
-use App\Models\Group;
+use App\Models\group;
 use View;
 use App\Events\GroupCreated;
 

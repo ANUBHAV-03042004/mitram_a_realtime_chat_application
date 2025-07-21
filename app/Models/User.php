@@ -156,12 +156,12 @@ public static function boot()
 
 public function group()
 {
-    return $this->belongsToMany('App\Models\Group', 'admin_id');
+    return $this->belongsToMany('App\Models\group', 'admin_id');
 }
 
 public function group_member()
 {
-    return $this->belongsToMany('App\Models\Group', 'group_participants', 'user_id', 'group_id')->orderBy('updated_at', 'desc');
+    return $this->belongsToMany('App\Models\group', 'group_participants', 'user_id', 'group_id')->orderBy('updated_at', 'desc');
 }
 
 public function message()

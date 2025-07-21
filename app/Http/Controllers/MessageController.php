@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\message;
-use App\Models\Group;
+use App\Models\group;
 
 use App\Events\MessageEvent;  
 
