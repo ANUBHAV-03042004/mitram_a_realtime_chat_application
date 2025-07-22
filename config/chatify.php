@@ -52,7 +52,7 @@ return [
             'useTLS' => env('PUSHER_SCHEME', 'https') === 'https',
         ],
     ],
-// send this
+
     /*
     |-------------------------------------
     | User Avatar
