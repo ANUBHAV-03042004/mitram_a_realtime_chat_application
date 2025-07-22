@@ -29,7 +29,7 @@
                     <ul class="conversation-list">
                         @foreach ($conversations as $conv)
                             <li class="mb-2 flex items-center justify-between text-white">
-                                <a href="{{ route('chat.show', $conv) }}" class="block p-2 rounded flex-grow {{ $currentConversation && $currentConversation->id == $conv->id ? 'bg-blue-100 text-black' : 'hover:bg-gray-100 text-black ' }}">
+                                <a href="{{ route('chat.show', $conv) }}" class="block p-2 rounded flex-grow {{ $currentConversation && $currentConversation->id == $conv->id ? 'bg-yellow-100 text-white' : 'hover:bg-gray-100 text-black ' }}">
                                     {{ $conv->title }}
                                 </a>
                                 <button class="delete-conversation text-red-500 hover:text-red-700" data-id="{{ $conv->id }}">
